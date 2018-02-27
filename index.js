@@ -29,7 +29,7 @@ function LedControl(log, config, api) {
 
   this.requestServer = http.createServer(((request, response) => {
     if (request.url === '/add') {
-      this.addAccessory(new Date().toISOString());
+      this.addAccessory('LedLamp');
       response.writeHead(204);
       response.end();
     }
