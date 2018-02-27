@@ -9,7 +9,12 @@ module.exports = (homebridge) => {
   Characteristic = homebridge.hap.Characteristic;
   UUIDGen = homebridge.hap.uuid;
   
-  homebridge.registerPlatform('homebridge-led-control', 'LedControl', LedControl, true);
+  try {
+    homebridge.registerPlatform('homebridge-led-control', 'LedControl', LedControl, true);
+  }
+  catch(err) {
+    
+  }
 }
 
 // Platform constructor
