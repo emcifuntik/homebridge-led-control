@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-led-contorl",
+  "name": "homebridge-led-control",
   "version": "0.0.1",
   "description": "Control RGB Led panel",
   "license": "ISC",
